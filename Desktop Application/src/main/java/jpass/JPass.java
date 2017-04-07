@@ -48,6 +48,7 @@ public class JPass {
     private static final String METAL_LOOK_AND_FEEL = "javax.swing.plaf.metal.MetalLookAndFeel";
 
     public static void main(final String[] args) {
+        
         try {
             String lookAndFeel;
             if (Configuration.getInstance().is("system.look.and.feel.enabled", false)) {

@@ -10,10 +10,8 @@ import javacard.security.CryptoException;
 import javacard.security.RandomData;
 import javax.smartcardio.ResponseAPDU;
 
-public class SimpleAPDU {
-    
-        
-    public static void main(String[] args) {
+public class APDU {
+    public void playWithCard() {
         
         JavaCard card = null;
         try {

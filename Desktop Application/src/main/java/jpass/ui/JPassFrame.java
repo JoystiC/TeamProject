@@ -60,6 +60,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JToolBar;
 import javax.swing.ListSelectionModel;
 import javax.swing.WindowConstants;
+import jpass.smartcard.APDU;
 
 /**
  * The main frame for JPass.
@@ -92,7 +93,14 @@ public final class JPassFrame extends JFrame {
     private final IconStorage iconStorage = IconStorage.newInstance();
     private volatile boolean processing = false;
 
+    public void connectToCardAndPlay() {
+        APDU apdu = new APDU();
+        apdu.playWithCard();
+    }
+    
     private JPassFrame(String fileName) {
+        connectToCardAndPlay();
+        
         try {
             setIconImage(MessageDialog.getIcon("lock").getImage());
         } catch (Exception e) {
