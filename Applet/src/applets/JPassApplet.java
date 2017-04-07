@@ -2,7 +2,6 @@ package applets;
 
 import javacard.framework.*;
 import javacard.security.*;
-import javacardx.crypto.*;
 
 
 public class JPassApplet extends javacard.framework.Applet
