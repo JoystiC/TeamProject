@@ -44,7 +44,7 @@ public class APDU {
         card.sendAPDU( APDUFactory.verifyPin(DEFAULT_USER_PIN) );
         
         // Change pin
-        System.out.println("Changing PIN on unlocked card");
+        System.out.println("Changing PIN on unlocked card!!");
         byte NEW_PIN[] = {(byte) 0x10, (byte) 0x20, (byte) 0x30, (byte) 0x40};
         card.sendAPDU( APDUFactory.setPin(NEW_PIN) );
         
