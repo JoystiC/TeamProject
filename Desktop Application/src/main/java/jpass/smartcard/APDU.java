@@ -39,7 +39,7 @@ public class APDU {
         card.sendAPDU( APDUFactory.setPin(SOME_PIN) );
         
         // Unlock card with pin
-        System.out.println("Unlocking card");
+        System.out.println("Unlocking card!!!");
         byte DEFAULT_USER_PIN[] = {(byte) 0x30, (byte) 0x30, (byte) 0x30, (byte) 0x30};
         card.sendAPDU( APDUFactory.verifyPin(DEFAULT_USER_PIN) );
         
