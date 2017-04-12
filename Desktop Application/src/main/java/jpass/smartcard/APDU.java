@@ -49,7 +49,7 @@ public class APDU {
         card.sendAPDU( APDUFactory.setPin(NEW_PIN) );
         
         // Unlock card again
-        System.out.println("Unlocking card");
+        System.out.println("Unlocking card!!");
         card.sendAPDU( APDUFactory.verifyPin(NEW_PIN) );
     }
 }
